@@ -11,7 +11,7 @@ export const stories = [
     title: 'Clean Water Initiative', 
     desc: 'The new borehole provides safe water for over 500 households...',
     fullDesc: 'The new borehole provides safe water for over 500 households in the community, significantly improving health and education outcomes.',
-    img: '/assets/about2.jpg'
+    img: '/assets/wateri.jpg'
   },
   { 
     id: 'health',

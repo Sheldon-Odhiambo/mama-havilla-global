@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const galleryImages = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1542601906990-b4d3fb7784b9?q=80&w=600', category: 'Outreach', title: 'Community Mission' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600', category: 'Wellness', title: 'Health Camp' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1544716279-191a3297598c?q=80&w=600', category: 'School', title: 'Community School' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600', category: 'Outreach', title: 'Feeding Program' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600', category: 'Wellness', title: 'Wellness Workshop' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600', category: 'School', title: 'Classroom Session' },
+  { id: 1, src: '/assets/gal1.jpg', category: 'Outreach', title: 'Community Mission' },
+  { id: 2, src: '/assets/gal2.jpg', category: 'Wellness', title: 'Health Camp' },
+  { id: 3, src: '/assets/gal3.jpg', category: 'School', title: 'Community School' },
+  { id: 4, src: '/assets/gal4.jpg', category: 'Outreach', title: 'Feeding Program' },
+  { id: 5, src: '/assets/gal5.jpg', category: 'Wellness', title: 'Wellness Workshop' },
+  { id: 6, src: '/assets/gal7.jpg', category: 'School', title: 'Classroom Session' },
 ];
 
 const categories = ['All', 'Outreach', 'School', 'Wellness'];
