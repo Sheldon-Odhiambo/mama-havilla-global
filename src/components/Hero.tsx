@@ -1,80 +1,100 @@
 import { motion } from 'motion/react';
 import { Heart } from 'lucide-react';
 
-export default function Hero({ onDonateClick }: { onDonateClick: () => void }) {
+export default function Hero({
+  onDonateClick,
+}: {
+  onDonateClick: () => void;
+}) {
   return (
-    <section id="home" className="pt-32 pb-16 px-4 md:px-8 bg-white overflow-hidden relative">
-      {/* Background shape accent */}
-      <div className="absolute -top-20 -left-20 w-96 h-96 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+    <section
+      id="home"
+      className="relative overflow-hidden bg-white px-4 pt-24 pb-16 md:px-8 md:pt-32"
+    >
+      {/* Background accent */}
+      <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-yellow-400 opacity-20 blur-3xl md:h-96 md:w-96" />
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="text-left z-10">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+        {/* Left Side */}
+        <div className="z-10 text-center md:text-left">
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tighter"
+            className="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-7xl"
           >
-            Turning Pain Into Purpose, Hope Into Action.
+            Turning Pain Into Purpose,
+            <br className="hidden md:block" />
+            Hope Into Action.
           </motion.h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-lg">
-            We are building a world where everyone has the power to shape their lives, rooted in compassion and community.
+
+          <p className="mx-auto mb-8 max-w-lg text-base text-gray-600 sm:text-lg md:mx-0 md:text-xl">
+            We are building a world where everyone has the power to shape
+            their lives, rooted in compassion and community.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              onClick={onDonateClick}
-              className="bg-black hover:bg-gray-800 text-white font-bold py-4 px-10 rounded-full text-lg shadow-md"
-            >
-              Donate Now
-            </motion.button>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              href="#programs"
-              className="bg-transparent border-2 border-black hover:bg-black hover:text-white font-bold py-4 px-10 rounded-full text-lg text-center"
-            >
-              Discover +
-            </motion.a>
-          </div>
+
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    onClick={onDonateClick}
+                    className="rounded-full bg-black px-5 py-2 text-sm font-bold text-white shadow-md transition hover:bg-gray-800 sm:px-8 sm:py-4 sm:text-lg"
+                  >
+                    Donate Now
+                  </motion.button>
+
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    href="#programs"
+                    className="rounded-full border-2 border-black px-5 py-2 text-center text-sm font-bold transition hover:bg-black hover:text-white sm:px-8 sm:py-4 sm:text-lg"
+                  >
+                    Discover +
+                  </motion.a>
+                </div>
         </div>
-        
+
+        {/* Right Side */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative h-[500px] w-full"
+          className="relative flex h-[350px] w-full items-center justify-center sm:h-[450px] md:h-[600px]"
         >
-          {/* Main Photo Masked - Using a simple blob clip-path as a substitute for Africa map */}
-          <div className="flex h-full w-full items-center justify-center">
-                <div
-                  className="h-[700px] w-[700px] shadow-2xl"
-                  style={{
-                    backgroundImage: "url('/assets/landing page.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
+          {/* Africa map image */}
+          <div
+            className="h-[320px] w-[320px] sm:h-[450px] sm:w-[450px] md:h-[650px] md:w-[650px]"
+            style={{
+              backgroundImage: "url('/assets/landing page.jpg')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
 
-                    WebkitMaskImage: "url('/assets/africa.svg')",
-                    WebkitMaskRepeat: "no-repeat",
-                    WebkitMaskPosition: "center",
-                    WebkitMaskSize: "contain",
+              WebkitMaskImage: "url('/assets/africa.svg')",
+              WebkitMaskRepeat: 'no-repeat',
+              WebkitMaskPosition: 'center',
+              WebkitMaskSize: 'contain',
 
-                    maskImage: "url('/assets/africa.svg')",
-                    maskRepeat: "no-repeat",
-                    maskPosition: "center",
-                    maskSize: "contain",
-                  }}
-                />
-              </div>
-          {/* Stats Blob */}
-          <motion.div 
+              maskImage: "url('/assets/africa.svg')",
+              maskRepeat: 'no-repeat',
+              maskPosition: 'center',
+              maskSize: 'contain',
+            }}
+          />
+
+          {/* Stats card */}
+          <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.1, rotate: 10 }}
-            className="absolute -bottom-10 -left-10 bg-yellow-400 w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-xl border-4 border-white"
+            className="absolute bottom-0 left-2 flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-white bg-yellow-400 shadow-xl sm:h-28 sm:w-28 md:-bottom-6 md:-left-6 md:h-32 md:w-32"
           >
-            <Heart className="text-gray-900 mb-1" size={24} />
-            <span className="text-3xl font-bold text-gray-900">288</span>
-            <span className="text-xs font-bold text-center px-2 text-gray-900">children in need</span>
+            <Heart className="mb-1 text-gray-900" size={20} />
+
+            <span className="text-2xl font-bold text-gray-900 md:text-3xl">
+              288
+            </span>
+
+            <span className="px-1 text-center text-[10px] font-bold text-gray-900 md:text-xs">
+              Children in need
+            </span>
           </motion.div>
         </motion.div>
       </div>
