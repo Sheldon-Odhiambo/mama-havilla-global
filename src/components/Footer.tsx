@@ -20,14 +20,20 @@ export default function Footer({ onVolunteerClick }: { onVolunteerClick: () => v
         <div className="max-w-7xl mx-auto px-4 mb-20 text-center">
           <h3 className="text-white text-lg font-bold mb-4">Donation Holders say <span className="text-yellow-400">Read Below</span></h3>
           <p className="italic text-lg mb-6 max-w-2xl mx-auto">"Mama Havillah has completely transformed our community, providing hope where there was once despair. We are forever grateful."</p>
-          <p className="text-white font-bold">John Doe</p>
+          <p className="text-white font-bold">Milly</p>
           <p className="text-sm">(Community Leader)</p>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12 border-t border-gray-700 pt-16">
           {/* Charity Info */}
           <div>
-            <h4 className="text-white font-bold text-xl mb-6">Mama Havillah</h4>
+            <div className="mb-6">
+                  <img
+                    src="/assets/mh2logo-r.png"
+                    alt="Mama Havillah Logo"
+                    className="h-20 w-auto"
+                  />
+                </div>
             <p className="mb-6 text-sm">Empowering communities through sustainable development, education, and compassionate care.</p>
             <div className="space-y-3 text-sm">
               <p className="flex items-center"><MapPin size={16} className="mr-2 text-yellow-400" /> Ongata Rongai, Opposite PCEA Church Ongata Rongai</p>

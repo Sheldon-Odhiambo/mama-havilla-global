@@ -52,8 +52,8 @@ export const programCategories = [
       { id: 'orphanage', title: 'Havillah Hope Orphanage', desc: 'Compassionate care for vulnerable children.', img: '/assets/prog1.jpg' },
       { id: 'school', title: 'Havillah Community School', desc: 'Quality education for all.', img: '/assets/prog2.jpg' },
       { id: 'network', title: 'Havillah Sister Sister Support Network', desc: 'Empowering women through community.', img: '/assets/prog3.jpg' },
-      { id: 'kitchen', title: 'Mama Havillah Kitchen', desc: 'Feeding communities in need.', img: '/assets/prog4.jpg' },
-      { id: 'jigger', title: 'Anti-Jigger Campaign', desc: 'Health awareness and support.', img: '/assets/prog5.jpg' },
+      { id: 'kitchen', title: 'Mama Havillah Kitchen', desc: 'Feeding communities in need.', img: '/assets/prg44.jpg' },
+      { id: 'jigger', title: 'Anti-Jigger Campaign', desc: 'Health awareness and support.', img: '/assets/prog5.jpeg' },
       { id: 'wellness', title: 'Havillah Haven Wellness Center', desc: 'Holistic health and wellness.', img: '/assets/prog6.jpg' },
     ]
   },
