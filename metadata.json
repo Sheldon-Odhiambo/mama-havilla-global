@@ -1,0 +1,6 @@
+{
+  "name": "Mama Havillah Global",
+  "description": "A compassionate humanitarian organization transforming pain into purpose through education, healthcare, and economic empowerment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
