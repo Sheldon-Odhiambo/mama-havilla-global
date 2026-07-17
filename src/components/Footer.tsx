@@ -68,9 +68,9 @@ export default function Footer({ onVolunteerClick }: { onVolunteerClick: () => v
             <h4 className="text-white font-bold text-lg mt-10 mb-4">Follow us</h4>
             <div className="flex space-x-4 text-gray-400">
               <Facebook size={20} className="hover:text-yellow-400 cursor-pointer" />
-              <Twitter size={20} className="hover:text-yellow-400 cursor-pointer" />
+              {/* <Twitter size={20} className="hover:text-yellow-400 cursor-pointer" />
               <Instagram size={20} className="hover:text-yellow-400 cursor-pointer" />
-              <Linkedin size={20} className="hover:text-yellow-400 cursor-pointer" />
+              <Linkedin size={20} className="hover:text-yellow-400 cursor-pointer" /> */}
             </div>
           </div>
         </div>
