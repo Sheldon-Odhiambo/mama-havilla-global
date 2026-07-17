@@ -16,15 +16,15 @@ export default function Navbar({ onDonateClick, onVolunteerClick }: { onDonateCl
     <nav className="sticky top-0 w-full bg-white shadow-md z-40 border-b border-gray-100" aria-label="Main Navigation">
       <div className="max-w-7xal mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <div className="flex-shrink-0 flex items-center ml-30">
-                <a href="/" className="flex items-center">
-                  <img
-                    src="/assets/logo1.png"
-                    alt="Mama Havillah Global Logo"
-                    className="h-14 w-auto"
-                  />
-                </a>
-              </div>
+          <div className="flex-shrink-0 flex items-center ml-26">
+  <a href="/" className="flex items-center">
+    <img
+      src="/assets/logo1.png"
+      alt="Mama Havillah Global Logo"
+      className="h-20 md:h-24 w-auto"
+    />
+  </a>
+</div>
           <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <a key={link.name} href={link.href} className="text-gray-900 hover:text-green-700 text-sm font-semibold tracking-wide focus:outline-none focus-visible:ring-4 focus-visible:ring-green-300 rounded-sm">
